@@ -1,0 +1,30 @@
+src/
+├── types/
+│   └── index.ts                # Сұрақтар, Профильдер, Мемлекеттік State типтері
+├── data/
+│   ├── textbookTopics.ts       # Оқулықтың нақты тақырыптары мен мазмұны (7-сынып)
+│   └── questionRegistry.ts     # Anti-Duplicate анти-дубликат реестрі және сұрақтар бассейні
+├── utils/
+│   └── testValidator.ts        # Uniqueness, Hash және Semantic Duplicate тексеру кешені
+├── store/
+│   └── useBioforceStore.ts     # Zustand / React State негізіндегі сақтау жүйесі
+├── components/
+│   ├── 3d/
+│   │   ├── CharacterCanvas.tsx # 3D Кейіпкер визуализаторы (RTF + OrbitControls + Particles)
+│   │   ├── BiologyModel.tsx    # 3D Биологиялық модельдер (Cell, DNA, Tissue т.б.)
+│   │   └── GreenStar3D.tsx     # Start батырмасындағы 3D жасыл жұлдыз
+│   ├── landing/
+│   │   ├── LandingHero.tsx     # BIOFORCE + "ӨЗ ПРОФИЛІҢДІ ТАҢДА"
+│   │   └── ProfileCard.tsx     # 6 Аниме/Ғарыш профилі карточкалары
+│   ├── dashboard/
+│   │   ├── Navigation.tsx      # МОДУЛЬ | КЕЙІПКЕР | ҚАТЕМЕН ЖҰМЫС | АЙЛЫҚ ТЕСТ
+│   │   ├── ProgressDashboard.tsx # General Progress (Жалпы прогресс) + Апталық / Қателер
+│   │   ├── ModulesView.tsx     # 1-Апта (1-4) & 2-Апта (5-9+) Модульдері мен Unlock логикасы
+│   │   ├── QuestionCard.tsx    # 20/50/100 Сұрақ 인터фейсі + Motivational Messages
+│   │   ├── MistakesView.tsx    # Қатемен жұмыс секциясы
+│   │   ├── CharacterView.tsx   # Кейіпкерлер залы мен XP прогрессиясы
+│   │   └── TestComplete.tsx    # Тест қорытынды экраны мен Level-Up анимациясы
+│   └── ui/
+│       └── Breadcrumb.tsx      # Навигациялық навиғатор
+├── App.tsx                     # Негізгі жүктеуіш және Routing
+└── index.css                   # Neon Green (#39FF88) Glassmorphism & Custom Tailwind CSS
